@@ -1,0 +1,48 @@
+Description - 
+
+	Name is TBD but will probably come about before or early onto development / art direction 
+
+	This project will be a tower defence style game that takes inspiration from games such as Kingdom Rush and bloons TD and mixes aspects of each together. From kingdom Rush: predetermined places for towers and such to be placed as well as ideas for the defence towers that  can be placed around the map. From bloons: the enemies (more specifically the children system that they have for seperation of them once damaged), and the upgrade system / mechanics. Tha map will be predetermined and there will be around 3 maps to play on, each in increasing difficulty in either where you can place the towers / the length of the map and/or the distribution of enemies that are present. 
+
+Similar Projects - 
+
+	Similar projects I have seen online are the actual games that I am pulling from such as Kingdom Rush and Bloons TD 5 with some of their systems that I will attempt to recreate. Some similar prjects I have seen are: the 112 term prject that fully recreated btd 5 (which will not be mine as I dont want to fully copy the game and term project), the 3d version of bloons created by Braian Strak that makes you play as the enemy trying to get to the exit (a sort of role reversal). My project is going to be different from these two as I dont want to take the staright art from the two games (although some aspects will be moved over) and I want to combine it with some elements of Kingdom Rush that I think will make my project different enough from the other 112 term project. 
+
+Structural Plan - 
+	
+	- External File with the colors/name of the enemies that has their stats linked to that specific type as well as the children they will split into once damaged 
+	- External File containing the names of the towers that will be doing the attacking with most of the same stats that enemies will have just damage being dealt instead of damage recieved 
+	- Enemies Class - Creates all the possible enemies at once and will keep track of them either in a list or dictionary to see how many need to be spawned 
+	- A class of a sort of "turn points" so the enemies know when to change direction on a given map and so the maps arent just a straight line 
+
+Algorithmic Plan - 
+	
+	For spawning all bloons and keeping track of their movement with every step I am going to use the __iter__ method which would allow me to iterate over all of the enemies that I either keep in a list or a dictonary and move them based on their speed. And if those enemies then hit a turning point I would change a value in their class which would store the direction they are moving in. Also their x and y positions would be stored in their respective instance as well. Finally, they will each have a unique id so that I am not iterating over the wrong enemy. 
+
+	The most algorithmically challenging thing however may be the actual shooting mechanic of the monkey as they will need to be able to shoot their own projectile that has its own stats and I will have to check collisions about it to be able to actually pop the balloons. I dont have an idea on how to do this yet but it will most likey be a subclass of the actual tower that inherits things such as damage and pierce which will tell it what to do and how many bloons to pop. 
+
+Timeline - 
+	By TP1 I want to have the classes of both towers and enemies either templated out or mostly put together as well as figuring out how to do the turning points on the map 
+	By TP2 I want to have the stats of everything figured out as well as the placing of the towers and a start on the ui and game screen aspects 
+	By TP 3 it should all be done 
+
+Version Control Plan - 
+
+	I will be storing all of my work on google drive in a folder called '112 Term Project' and having version folders inside of all respective TP weeks to be able to keep track of where I currently am and also be able to access the folder on my PC back in the dorm 
+	(Screenshot of this will be included with the storyboard) 
+
+Module List - 
+
+	Will not be using any external modules for my project 
+
+
+TP 1 UPDATE - 
+
+I have decided to just make a full remake of bloons and I am going to include dragging and dropping monkeys anywhere on the board except for the actual paths of the bloons. Furthermore, they will now have 2 upgrade paths with some changing the aspects of the pathing of the projectile. Furthermore, the bloons will have certain resistances to the types of projectiles that the monkeys shoot. 
+
+TP 2 UPDATE - 
+
+Nothing
+	
+TP 3 UPDATE -
+Some finishing touches souch as selling towers however I did remove one map as it just didnt want to work. 
