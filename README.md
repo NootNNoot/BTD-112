@@ -9,7 +9,8 @@ It has the same splitting mechanics on the bloons as well as a good variety of t
 (try and guess which on ). 
 
 How to run:
-All you should need to run the program is to run the Bloons TD 112.py file as everything else is local. 
+Download the zip file (I promise it is not a zipbomb 💣💥🖥️🤯✖️) named "Bloons 112" and you should be able to run it by running the Bloons TD 112.py file as everything else is local. 
+
 
 Shortcuts:
 Pressing the ',' or '<' key will preform a left upgrade quickly as long as a monkey is selected and your cash amount is 
